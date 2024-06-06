@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form action="registration_process.php" method="post">
+            <div class="form-group">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmpassword">Confirm Password:</label>
+                <input type="password" id="conpassword" name="conpassword" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Phone Number:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">DOB:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="sectionidb">
+                    <input type="radio" value="section b" name="section" id="sectionidb" />
+                    Male
+                  </label>
+
+                  <label for="sectionidc">
+                    <input type="radio" value="section c" name="section" id="sectionidc" />
+                    Femail
+                  </label>
+
+                  <label for="sectionidc">
+                    <input type="radio" value="section c" name="section" id="sectionidc" />
+                    Other
+                  </label>
+
+                  <div>
+                    <label for="Hobbies"> Hobbies
+                        <input type="checkbox" name="hobbies" id="reading" class="hobbies"> Reading
+                  
+                        <label for="Hobbies1">
+                            <input type="checkbox" name="hobbies" id="travelling" class="hobbies"> Travelling
+
+                            <label for="Hobbies1">
+                                <input type="checkbox" name="hobbies" id="cooking" class="hobbies"> Cooking
+
+                                <label for="Hobbies1">
+                                    <input type="checkbox" name="hobbies" id="other" class="hobbies"> Other
+                  
+
+                  </div>
+
+                  <div class="form-group">
+                    <label for="profile-picture">Profile Picture</label>
+                   <input type="file" id="profile-picture" name="profile-picture">
+                </div>
+            
+                  <div>
+
+                    <label for="country">Country </label>
+                    <select name="country" id="country">
+                    <option value="no-country">Select country</option>
+                    <option value="India">India</option>
+                    <option value="US">US</option>
+                    <option value="AUS">AUS</option>
+                    <option value="UAE">UAE</option>
+                    </select>
+
+
+                  </div>
+            
+            </div>
+
+            <div>
+                <textarea name="feedback" id="101" cols="30" rows="10" placeholder="Give your valuable feedback here"></textarea>
+            </div>
+
+            <input type="checkbox" id="ch-Box" name="ch-Box">
+            <label for="ch-Box">I accept all the T&C </label>
+           
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
