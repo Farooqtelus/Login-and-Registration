@@ -3,113 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registration.css">
+    
+    <title>Registration Form</title>
 </head>
 <body>
-    <div class="container">
-        <h2>User Registration</h2>
-        <form action="registration_process.php" method="post">
-            <div class="form-group">
+    <div class="wrapper">
+    <div class="inner">
+     <div class="image-holder">
+       <img src="flower.jpg" alt="flower"> 
+     </div>   
+      
+     <form>
+        <h3> Registration Form </h3>
 
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+        <div class="form-group">
 
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full name" class="form-control">
 
-                <label for="username">User Name:</label>
-                <input type="text" id="username" name="username" required>
+        <label for="User Name">User Name</label>
+        <input type="text" id="user name" class="form-control">
 
-            </div>
+        </div>
 
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+        <div class="form-wrapper">
 
-            <div class="form-group">
-                <label for="confirmpassword">Confirm Password:</label>
-                <input type="password" id="conpassword" name="conpassword" required>
-            </div>
+        <label for="Password">Password</label>
+        <input type="text" id="Password" class="form-control">
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+        <label for="Confirm Password">Confirm Password</label>
+        <input type="text" id="Confirm Password" class="form-control">
 
-            <div class="form-group">
-                <label for="email">Phone Number:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+        <div class="form-wrapper">
+        <label for="Email Id">Email Id</label>    
+        <input type="text" id="Email Id" class="form-control">
 
-            <div class="form-group">
-                <label for="email">DOB:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+        <label for="Phone Number">Phone Number</label> 
+        <input type="text" id="Phone Number" class="form-control">
 
-            <div>
-                <label for="sectionidb">
-                    <input type="radio" value="section b" name="section" id="sectionidb" />
-                    Male
-                  </label>
+        <label for="Date Of Birth">Date Of Birth</label> 
+        <input type="date" id="Date Of Birth" class="form-control">
+        
+    </div>
+    <div class="form-wrapper">
+        <label for="gender">Gender: </label>
+        
+            <input type="radio" id="male" name="male" class="form-control">
+            <label for="male">Male</label>
 
-                  <label for="sectionidc">
-                    <input type="radio" value="section c" name="section" id="sectionidc" />
-                    Femail
-                  </label>
+            <input type="radio" id="female" name="female" class="form-control">
+            <label for="female">Female</label>
 
-                  <label for="sectionidc">
-                    <input type="radio" value="section c" name="section" id="sectionidc" />
-                    Other
-                  </label>
-
-                  <div>
-                    <label for="Hobbies"> Hobbies
-                        <input type="checkbox" name="hobbies" id="reading" class="hobbies"> Reading
-                  
-                        <label for="Hobbies1">
-                            <input type="checkbox" name="hobbies" id="travelling" class="hobbies"> Travelling
-
-                            <label for="Hobbies1">
-                                <input type="checkbox" name="hobbies" id="cooking" class="hobbies"> Cooking
-
-                                <label for="Hobbies1">
-                                    <input type="checkbox" name="hobbies" id="other" class="hobbies"> Other
-                  
-
-                  </div>
-
-                  <div class="form-group">
-                    <label for="profile-picture">Profile Picture</label>
-                   <input type="file" id="profile-picture" name="profile-picture">
-                </div>
+            <input type="radio" id="others" name="others" class="form-control">
+            <label for="others">Others</label>
             
-                  <div>
+        </div>
+     <div class="form-wrapper">
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="reading" name="check-box" class="form-control">
+        <label for="reading">Reading</label>
 
-                    <label for="country">Country </label>
-                    <select name="country" id="country">
-                    <option value="no-country">Select country</option>
-                    <option value="India">India</option>
-                    <option value="US">US</option>
-                    <option value="AUS">AUS</option>
-                    <option value="UAE">UAE</option>
-                    </select>
+        <input type="checkbox" id="travelling" name="check-box" class="form-control">
+        <label for="travelling">Travelling</label>
+
+        <input type="checkbox" id="cooking" name="check-box" class="form-control">
+        <label for="cooking">Cooking</label>
+
+        <input type="checkbox" id="other" name="check-box" class="form-control">
+        <label for="other">Other</label>
+        
+     </div>
+
+     <div class="form-wrapper">
+        <label for="profile picture">Profile Pic:</label>
+        <input type="file" id="profile picture" name="profile picture" class="form-control">
+     </div>
 
 
-                  </div>
-            
-            </div>
+     <div class="form-wrapper">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="" disabled selected>Select</option>
+            <option value="india">INDIA</option>
+            <option value="uae">UAE</option>
+            <option value="aus">AUS</option>
+            <option value="us">US</option>
+            <option value="pak">PAK</option>
+        </select> <br>
 
-            <div>
-                <textarea name="feedback" id="101" cols="30" rows="10" placeholder="Give your valuable feedback here"></textarea>
-            </div>
+     </div>
 
-            <input type="checkbox" id="ch-Box" name="ch-Box">
-            <label for="ch-Box">I accept all the T&C </label>
-           
-            <div class="form-group">
-                <button type="submit">Register</button>
-            </div>
-        </form>
+     <div class="form-wrapper">
+        <label for="bio">Bio:</label><br>
+        <textarea name="bio" id="text area"> </textarea>
+     </div>
+
+     <div class="form-wrapper">
+        <input type="checkbox" id="check-box-id" name="check-box-id" class="form-control">
+        <label for="check-box-id">Agree To Terms & Conditions</label>
+     </div>
+
+    </div>
+
+    </div>
+<div class="buttons">
+    <button type="submit">Submit</button>
+    <button type="button">Reset</button>
+</div>
+    
+     </form>
+
+    </div>
     </div>
 </body>
 </html>
